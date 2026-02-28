@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 9</title>
+</head>
+<body>
+<h2>I have cities but no houses, rivers but no water, and roads but no cars. What am I?</h2>
+<input type="text" id="answer">
+<button onclick="check()">Submit</button>
+
+<script>
+function check(){
+  let ans = document.getElementById("answer").value.toLowerCase();
+  if(ans === "map"){
+    alert("🎉 Congratulations! You completed the game!");
+    window.location.href="index.html";
+  } else {
+    alert("Wrong answer! Try again.");
+  }
+}
+</script>
+</body>
+</html>
