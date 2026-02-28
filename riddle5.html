@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 5</title>
+</head>
+<body>
+<h2>I’m tall when I’m young, and short when I’m old. What am I?</h2>
+<input type="text" id="answer">
+<button onclick="check()">Submit</button>
+
+<script>
+function check(){
+  let ans = document.getElementById("answer").value.toLowerCase();
+  if(ans === "candle"){
+    window.location.href="riddle6.html";
+  } else {
+    alert("Wrong answer! Try again.");
+  }
+}
+</script>
+</body>
+</html>
